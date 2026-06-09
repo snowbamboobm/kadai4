@@ -23,19 +23,19 @@ diff $tmp-ans $tmp-args || ERROR_EXIT "error in test1-1-2"
 diff $tmp-ans $tmp-args || ERROR_EXIT "error in test1-2-2"
 
 #test2：引数が小数
-./gcd.sh 5.6 3.2> $tmp-ans && ERROR_EXIT "error in test2-1"
+./gcd.sh 5.6 3.2 2> $tmp-ans && ERROR_EXIT "error in test2-1"
 diff $tmp-ans $tmp-nat || ERROR_EXIT "error in test2-2"
 
 #test3：引数が文字
-./gcd.sh aa ggg> $tmp-ans && ERROR_EXIT "error in test3-1"
+./gcd.sh aa ggg 2> $tmp-ans && ERROR_EXIT "error in test3-1"
 diff $tmp-ans $tmp-type || ERROR_EXIT "error in test3-2"
 
 #test4：引数が負の数
-./gcd.sh -20 4> $tmp-ans && ERROR_EXIT "error in test4-1"
+./gcd.sh -20 4 2> $tmp-ans && ERROR_EXIT "error in test4-1"
 diff $tmp-ans $tmp-val || ERROR_EXIT "error in test4-2"
 
 #test5：引数が10桁以上
-./gcd.sh 2 12345678910> $tmp-ans && ERROR_EXIT "error in test5-1"
+./gcd.sh 2 12345678910 2> $tmp-ans && ERROR_EXIT "error in test5-1"
 diff $tmp-ans $tmp-over || ERROR_EXIT "error in test5-2"
 
 #test6-1：引数が正常
