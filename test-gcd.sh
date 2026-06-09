@@ -39,31 +39,31 @@ diff $tmp-ans $tmp-val || ERROR_EXIT "error in test4-2"
 diff $tmp-ans $tmp-over || ERROR_EXIT "error in test5-2"
 
 #test6-1：引数が正常
-./gcd.sh 2 4> $tmp-result
+./gcd.sh 2 4 > $tmp-result
 echo "2" > $tmp-ans
 diff $tmp-result $tmp-ans && echo "OK" || ERROR_EXIT "error in test6-1"
 rm $tmp-result $tmp-ans
 
 #test6-2：引数が正常
-./gcd.sh 12 18> $tmp-result
+./gcd.sh 12 18 > $tmp-result
 echo "6" > $tmp-ans
 diff $tmp-result $tmp-ans && echo "OK" || ERROR_EXIT "error in test6-2"
 rm $tmp-result $tmp-ans
 
 #test6-3：引数が正常
-./gcd.sh 7 11> $tmp-result
+./gcd.sh 7 11 > $tmp-result
 echo "1" > $tmp-ans
 diff $tmp-result $tmp-ans && echo "OK" || ERROR_EXIT "error in test6-3"
 rm $tmp-result $tmp-ans
 
 #test6-4：引数が正常
-./gcd.sh 100 90> $tmp-result
+./gcd.sh 100 90 > $tmp-result
 echo "10" > $tmp-ans
 diff $tmp-result $tmp-ans && echo "OK" || ERROR_EXIT "error in test6-4"
 rm $tmp-result $tmp-ans
 
 #test6-5：引数が正常
-./gcd.sh 50 75> $tmp-result
+./gcd.sh 50 75 > $tmp-result
 echo "25" > $tmp-ans
 diff $tmp-result $tmp-ans && echo "OK" || ERROR_EXIT "error in test6-5"
 rm $tmp-result $tmp-ans
