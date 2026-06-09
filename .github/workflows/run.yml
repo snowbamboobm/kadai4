@@ -1,4 +1,4 @@
-name: same_test # 実行スクリプト名
+name: gcd_test # 実行スクリプト名
 on: [push] # 実行タイミング
 
 jobs:
