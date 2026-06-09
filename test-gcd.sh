@@ -19,7 +19,7 @@ ERROR_EXIT () {
 diff $tmp-ans $tmp-args || ERROR_EXIT "error in test1-1-2"
 
 #test1-2：引数の数が多い
-./gcd.sh 1 2 3 > $tmp-ans && ERROR_EXIT "error in test1-2-1"
+./gcd.sh 1 2 3> $tmp-ans && ERROR_EXIT "error in test1-2-1"
 diff $tmp-ans $tmp-args || ERROR_EXIT "error in test1-2-2"
 
 #test2：引数が小数
